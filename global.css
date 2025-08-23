@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ajoutez vos styles personnalisés ci-dessous */
+
+/* Pour éviter les problèmes de hauteur sur mobile */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Styles de base pour le body */
+body {
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styles pour les conteneurs responsives */
+.container {
+  @apply w-full px-4 mx-auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
