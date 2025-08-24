@@ -3,9 +3,7 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useFrameworkReady } from '@/hooks/useFrameworkReady';
-
-// Import des styles globaux
-import '../global.css';
+import '../style/global.css';
 
 const queryClient = new QueryClient();
 
